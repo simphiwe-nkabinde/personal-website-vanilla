@@ -59,7 +59,7 @@ header {
 
 /* ----------WRAPPER---------- */
 header .header-wrapper {
-    width: 90vw;
+    width: var(--content-width);
 }
 
 header nav {
@@ -70,13 +70,13 @@ header nav {
 
 @media (min-width: 576px) {
     header .header-wrapper {
-        max-width: 500px;
+        max-width: var(--content-width-sm);
     }
 }
 
 @media (min-width: 768px) {
     header .header-wrapper {
-        max-width: 650px;
+        max-width: var(--content-width-md);
     }
 }
 
@@ -94,6 +94,11 @@ header {
 header a {
     text-decoration: none;
     color: var(--primary-color);
+    transition: color .1s ease-in-out;
+}
+
+header a:hover {
+    color: var(--muted-color);
 }
 
 header #menu-main {
