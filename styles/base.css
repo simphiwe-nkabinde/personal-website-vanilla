@@ -34,3 +34,20 @@ body {
     box-shadow: 0 0 200px light-dark(#fafafa, #1c1d25) inset;
     transition: box-shadow .1s ease-in;
 }
+
+main {
+    width: var(--content-width);
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    main {
+        max-width: var(--content-width-sm);
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        max-width: var(--content-width-md);
+    }
+}
