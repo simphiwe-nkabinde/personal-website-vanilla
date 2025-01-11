@@ -60,6 +60,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        row-gap: 10px;
     }
 
     .hero-section p {
