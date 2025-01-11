@@ -60,3 +60,7 @@ footer .social-link-list {
 footer a {
     color: var(--muted-color);
 }
+
+footer a:hover {
+    color: var(--primary-color);
+}
